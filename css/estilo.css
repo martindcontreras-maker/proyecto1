@@ -56,14 +56,20 @@ div.artperfiles {
     padding: 5px;
 }
 
+div.perfilprofesional {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 800px;
+}
+
 div.perfilprofesional:hover {
-    transform: scale(1.1);
     transition: all 0.3s ease-in-out;
+    overflow: hidden;
 }
 
 .perfiles img {
-    width: 200px;
-    height: 200px;
     border: 2px solid black;
 }
 .perfiles {
@@ -71,18 +77,21 @@ div.perfilprofesional:hover {
 }
 
 .ppcontenido {
-    position: absolute;
+    top: 0;
     bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
     background: rgba(0, 0, 0, 0.5);
-    
     opacity: 0;
     transform: scale(0.8);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-h2:hover{
+.perfilprofesional h2:hover{
+    overflow: hidden;
     opacity: 1;
-    transform: scale(1);
     color:red;
 }
 
