@@ -1,5 +1,5 @@
 body {
-    color:brown;
+    color: brown;
     background: orange;
 
 }
@@ -15,11 +15,11 @@ div.bio {
     font-size: 1.125rem;
     line-height: 1.5;
     margin: 1.25rem;
-    display:flex;
-    flex-direction:row-reverse;
+    display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    gap:10rem;
+    gap: 10rem;
 }
 
 div.imgbio {
@@ -78,13 +78,16 @@ div.ppcontenido {
     bottom: 0;
     height: 100%;
     z-index: 1;
-    background: rgba(255,255, 0, 0.125);
+    background: rgba(255, 255, 0, 0.125);
     opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-div.ppcontenido h2:hover{
+div.ppcontenido h2:hover {
     opacity: 1;
-    color:red;
+    transform: scale(1);
+    color: red;
 }
 
 div.discos {
@@ -95,7 +98,15 @@ div.discos {
     height: 44.64rem;*/
 }
 
-a{
-color:blue;
+a {
+    color: blue;
 
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background: lightgray;
+    border-top: 2px solid black;
 }
