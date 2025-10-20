@@ -1,6 +1,6 @@
 :root {
---font-display: 'Courier New', Courier, monospace;
---font-body: Arial, sans-serif;
+    --font-display: 'Courier New', Courier, monospace;
+    --font-body: Arial, sans-serif;
 }
 
 body {
@@ -35,8 +35,8 @@ div.imgbio {
     border: 3px solid #000000;
 }
 
-div.imgbio img{
-    display:block;
+div.imgbio img {
+    display: block;
 }
 
 div.textbio {
@@ -90,6 +90,7 @@ div.ppcontenido {
     top: 0;
     bottom: 0;
     height: 100%;
+    width: 100%;
     z-index: 1;
     background: rgba(255, 255, 0, 0.125);
     opacity: 0;
@@ -97,7 +98,11 @@ div.ppcontenido {
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.perfil.ppcontenido h2:hover {
+.perfil {
+    position: relative;
+}
+
+.perfil:hover div.ppcontenido {
     opacity: 1;
     transform: scale(1);
     color: red;
