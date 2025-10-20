@@ -1,7 +1,12 @@
+:root {
+--font-display: 'Courier New', Courier, monospace;
+--font-body: Arial, sans-serif;
+}
+
 body {
     color: brown;
     background: orange;
-
+    margin: 0;
 }
 
 header {
@@ -22,8 +27,16 @@ div.bio {
     gap: 10rem;
 }
 
+/*p.biop1 {
+    margin-bottom: 155px;
+}*/
+
 div.imgbio {
     border: 3px solid #000000;
+}
+
+div.imgbio img{
+    display:block;
 }
 
 div.textbio {
@@ -84,18 +97,18 @@ div.ppcontenido {
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-div.ppcontenido h2:hover {
+.perfil.ppcontenido h2:hover {
     opacity: 1;
     transform: scale(1);
     color: red;
 }
 
-div.discos {
+div.profesional {
     display: flex;
     justify-content: center;
-    align-items: center;
-    /*width: 30rem;
-    height: 44.64rem;*/
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
 }
 
 a {
