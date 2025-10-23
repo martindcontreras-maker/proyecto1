@@ -1,6 +1,6 @@
 body {
     color: brown;
-    background: orange;
+    background: rgb(219, 198, 159);
     margin: 0;
     font-family: "Great Vibes", cursive;
     font-weight: 400;
@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background: lightgray;
+    background: rgb(194, 130, 130);
     padding: 10px;
     border-bottom: 2px solid black;
     font-family: "Great Vibes", cursive;
@@ -24,7 +24,7 @@ div.bio {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    gap: 10rem;
+    gap: 5rem;
 }
 
 /*p.biop1 {
@@ -32,7 +32,7 @@ div.bio {
 }*/
 
 div.imgbio {
-    
+
     border: 3px solid #000000;
 }
 
@@ -54,7 +54,7 @@ div.textbio {
 div.title {
     text-align: center;
     font-size: 3.125rem;
-    color: darkblue;
+    color: rgb(56, 56, 65);
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
 }
@@ -102,10 +102,11 @@ div.ppcontenido {
     height: 100%;
     width: 100%;
     z-index: 1;
-    background: rgba(255, 255, 0, 0.125);
+    background: rgba(223, 223, 146, 0.125);
     opacity: 0;
     transform: scale(0.8);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    letter-spacing: 0.25em;
 }
 
 .perfil {
@@ -115,7 +116,7 @@ div.ppcontenido {
 .perfil:hover div.ppcontenido {
     opacity: 1;
     transform: scale(1);
-    color: red;
+    color: rgb(110, 224, 148);
 }
 
 div.profesional {
@@ -160,14 +161,20 @@ div.profesional {
 
 
 a {
-    color: blue;
+    color: rgba(223, 223, 146, 0.125);
 
 }
 
 footer {
     text-align: center;
-    margin-top: 40px;
-    padding: 10px;
+    /*margin-top: 40px;
+    padding: 10px;*/
     background: lightgray;
-    border-top: 2px solid black;
+    border-top: 0.125rem solid black;
+    background: rgb(194, 130, 130);
+    padding: 10px;
+    font-family: "Great Vibes", cursive;
+    /*font-weight: 400;*/
+    font-style: normal;
+    font-size: 4rem;
 }
