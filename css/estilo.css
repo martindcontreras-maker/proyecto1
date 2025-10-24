@@ -2,9 +2,12 @@ body {
     color: brown;
     background: rgb(219, 198, 159);
     margin: 0;
+    padding: 0;
     font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-style: normal;
+    width: 100%;
+    height: 100%;
 }
 
 header {
@@ -161,6 +164,7 @@ div.profesional {
 
 
 a {
+
     color: rgba(223, 223, 146, 0.125);
 
 }
@@ -172,9 +176,67 @@ footer {
     background: lightgray;
     border-top: 0.125rem solid black;
     background: rgb(194, 130, 130);
-    padding: 10px;
     font-family: "Great Vibes", cursive;
     /*font-weight: 400;*/
     font-style: normal;
     font-size: 4rem;
+}
+
+@media (max-width: 430px) {
+    body {
+        background-color: #000000;
+    }
+
+    div.bio {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 1rem;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    footer {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    div.title {
+        font-size: 24px;
+    }
+
+    .perfiles {
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*#profesional {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        position: relative;
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-optical-sizing: auto;
+        font: weight 400px;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+    }*/
+
+
+    #administrativo {
+        overflow: scroll;
+    }
+
+    #sonidista {
+        overflow: scroll;
+    }
+
+    img {
+        overflow: scroll;
+        max-width: 215px;
+    }
 }
