@@ -143,26 +143,6 @@ div.profesional {
     font-variation-settings: "wdth" 100;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 a {
 
     color: rgba(223, 223, 146, 0.125);
@@ -211,6 +191,12 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    div.textbio {
+        max-width: 430px;
+        margin-right: 0px;
+        text-align: justify;
     }
 
     /*#profesional {
