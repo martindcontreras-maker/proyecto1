@@ -30,17 +30,16 @@ div.bio {
     gap: 5rem;
 }
 
-/*p.biop1 {
-    margin-bottom: 155px;
-}*/
-
 div.imgbio {
     border: 3px solid #000000;
 }
 
 div.imgbio img {
     display: block;
+    width: 248px;
+    height: 248px;
 }
+
 
 div.textbio {
     font-family: "Bricolage Grotesque", sans-serif;
@@ -94,6 +93,12 @@ div.ppimg {
     z-index: 0;
 }
 
+div.ppimg img {
+    display: block;
+    width: 600px;
+    height: 800px;
+}
+
 div.ppcontenido {
     display: flex;
     justify-content: center;
@@ -118,7 +123,8 @@ div.ppcontenido {
 .perfil:hover div.ppcontenido {
     opacity: 1;
     transform: scale(1);
-    color: rgb(110, 224, 148);
+    color: rgb(232, 216, 74);
+    font-size: 36px;
 }
 
 div.profesional {
@@ -148,7 +154,16 @@ a {
 
 }
 
-.sonidista {
+
+.sonidistatitulo {
+    text-align: center;
+    font-size: 3.125rem;
+    color: rgb(56, 56, 65);
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.bloques {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -161,6 +176,16 @@ a {
 
 div.sonidistaregistros img {
     display: block;
+}
+
+div.soundcloud {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
 }
 
 footer {
@@ -195,10 +220,29 @@ footer {
         gap: 1rem;
     }
 
-    footer {
-        font-size: 14px;
-        width: 100%;
+    div.imgbio {
+        border: 2px solid #000000;
     }
+
+    div.imgbio img {
+        display: block;
+        width: 124px;
+        height: 124px;
+    }
+
+    div.ppimg {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+    }
+
+    div.ppimg img {
+        display: block;
+        width: 300px;
+        height: 400px;
+    }
+
 
     div.title {
         font-size: 24px;
@@ -209,7 +253,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 50%;
+        width: 100%;
     }
 
     div.textbio {
@@ -223,13 +267,11 @@ footer {
         justify-content: center;
         align-items: center;
         height: 50%;
-        /*width: 30rem;
-    height: 44.64rem;*/
     }
 
     img {
-        object-fit:fill ;
-        
+        object-fit: fill;
+
     }
 
     #administrativo {
@@ -248,10 +290,23 @@ footer {
         align-items: center;
     }
 
+    .perfil:hover div.ppcontenido {
+        opacity: 1;
+        transform: scale(1);
+        color: rgb(232, 216, 74);
+        font-size: 12px;
+    }
+
     .sonidista {
         flex-direction: column;
         align-items: center;
         gap: 20px;
+    }
+
+
+    footer {
+        font-size: 14px;
+        width: 100%;
     }
 
 }
