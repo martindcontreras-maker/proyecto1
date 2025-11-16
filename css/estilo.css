@@ -44,11 +44,9 @@ div.imgbio img {
 div.textbio {
     font-family: "Bricolage Grotesque", sans-serif;
     font-optical-sizing: auto;
-    font: weight 400px;
     font-style: normal;
     font-variation-settings: "wdth" 100;
     max-width: 500px;
-    margin-right: 20px;
     text-align: justify;
 }
 
@@ -68,7 +66,6 @@ div.perfiles {
     position: relative;
     font-family: "Bricolage Grotesque", sans-serif;
     font-optical-sizing: auto;
-    font: weight 400px;
     font-style: normal;
     font-variation-settings: "wdth" 100;
 }
@@ -149,9 +146,7 @@ div.profesional {
 }
 
 a {
-
     color: rgba(223, 223, 146, 0.125);
-
 }
 
 
@@ -188,10 +183,30 @@ div.soundcloud {
     width: 100%;
 }
 
+div.eventosvivo {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+div.eventosvivoimg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+div.eventosvivoimg img {
+    width: 18.75rem;
+    height: 12.5rem;
+}
+
 footer {
     text-align: center;
     margin-top: 40px;
-    /*padding: 10px;*/
+    padding: 10px;
     background: lightgray;
     border-top: 0.125rem solid black;
     background: rgb(194, 130, 130);
@@ -210,6 +225,11 @@ footer {
         flex-direction: column;
     }
 
+    header {
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+    }
     div.bio {
         font-size: 1rem;
         line-height: 1.5;
@@ -253,11 +273,10 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
+
     }
 
     div.textbio {
-        max-width: 430px;
         margin-right: 0px;
         text-align: justify;
     }
@@ -298,11 +317,43 @@ footer {
     }
 
     .sonidista {
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        max-width: 430px;
+    }
+
+    .sonidistatitulo {
+        font-size: 1.5rem;
+    }
+
+    .bloques {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         gap: 20px;
     }
 
+    div.eventosvivo {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-style: normal;
+        font-size: 1rem;
+    }
+
+    div.eventosvivoimg {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    div.eventosvivoimg img {
+        width: 18.75rem;
+        height: 12.5rem;
+    }
 
     footer {
         font-size: 14px;
