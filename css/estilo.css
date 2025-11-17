@@ -92,8 +92,8 @@ div.ppimg {
 
 div.ppimg img {
     display: block;
-    width: 600px;
-    height: 800px;
+    width: 480px;
+    height: 640px;
 }
 
 div.ppcontenido {
@@ -120,8 +120,8 @@ div.ppcontenido {
 .perfil:hover div.ppcontenido {
     opacity: 1;
     transform: scale(1);
-    color: rgb(232, 216, 74);
-    font-size: 36px;
+    color: rgb(208, 154, 197);
+    font-size: 25px;
 }
 
 div.profesional {
@@ -143,6 +143,43 @@ div.profesional {
     font: weight 400px;
     font-style: normal;
     font-variation-settings: "wdth" 100;
+}
+
+#administrativo {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+div.imgadministrativo {
+    border: 3px solid #000000;
+}
+
+div.imgadministrativo img {
+    display: block;
+    width: 380px;
+    height: 260px;
+}
+
+div.textadministrativo {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    max-width: 500px;
+    text-align: justify;
+}
+
+p.adm2 a {
+    color: rgba(10, 11, 76, 0.792);
+}
+
+p.adm2 {
+    font-size: 1rem;
 }
 
 a {
@@ -194,11 +231,157 @@ div.eventosvivo {
 
 div.eventosvivoimg {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, 390px);
+    gap: 10px;
+    justify-content: center;
 }
 
 div.eventosvivoimg img {
+    width: 18.75rem;
+    height: 12.5rem;
+}
+
+#personal {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+div.ppercuadro {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+div.ppercuadro p {
+    display: block;
+    width: 320px;
+    height: 400px;
+    border: rgb(165, 42, 42) 3px solid;
+}
+
+div.ppercontenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: rgba(223, 223, 146, 0.125);
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    letter-spacing: 0.15em;
+    text-align: center;
+}
+
+.perfil:hover div.ppercontenido {
+    opacity: 1;
+    transform: scale(1);
+    color: rgb(208, 154, 197);
+    font-size: 20px;
+}
+
+#untref {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+div.imgperper {
+    border: rgb(165, 42, 42) 3px solid;
+    border-radius: 5%;
+}
+
+div.imgperper a {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    font-size: 2rem;
+    text-align: center;
+    color: rgba(10, 11, 76, 0.792);
+    justify-content: center;
+    align-items: center;
+}
+
+div.textperper {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    max-width: 800px;
+    text-align: center;
+}
+
+div.textperper h2 {
+    font-family: "Great Vibes", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    max-width: 800px;
+    text-align: center;
+}
+
+.bloquesperper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+
+}
+
+#fotografía {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.bloquesperper2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+
+}
+
+#rompecabezas {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+div.imgperper2 {
+    border: rgb(165, 42, 42) 0.5px solid;
+}
+.bloquesperper3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.bloquesperper3 img {
+    display: block;
     width: 18.75rem;
     height: 12.5rem;
 }
@@ -207,7 +390,6 @@ footer {
     text-align: center;
     margin-top: 40px;
     padding: 10px;
-    background: lightgray;
     border-top: 0.125rem solid black;
     background: rgb(194, 130, 130);
     font-family: "Great Vibes", cursive;
@@ -230,6 +412,7 @@ footer {
         text-align: center;
         width: 100%;
     }
+
     div.bio {
         font-size: 1rem;
         line-height: 1.5;
@@ -295,6 +478,7 @@ footer {
 
     #administrativo {
         overflow: scroll;
+
     }
 
     #sonidista {
