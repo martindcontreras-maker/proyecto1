@@ -5,3 +5,5 @@ cuando me vaya de la oficina tiene que figurar este escrito para saber que lo ú
 trate de avanzar, no le doy la tecla con el tema de position.
 
 avance con correcciones de CSS. Cambio de fuente, colores. Amplie el esqueleto del html
+
+luego de dias complicados, trato de ponerme al día siendo las 2 am del lunes 17-11.
