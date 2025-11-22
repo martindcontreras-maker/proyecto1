@@ -19,7 +19,9 @@ header {
     font-style: normal;
 }
 
-div.bio {
+/* No hace falta tanta especificidad. Recomendamos usar simplemente los nombres de clase */
+
+.bio {
     font-size: 1.125rem;
     line-height: 1.5;
     margin: 1.25rem;
@@ -30,18 +32,18 @@ div.bio {
     gap: 5rem;
 }
 
-div.imgbio {
+.imgbio {
     border: 3px solid #000000;
 }
 
-div.imgbio img {
+.imgbio img {
     display: block;
     width: 248px;
     height: 248px;
 }
 
 
-div.textbio {
+.textbio {
     font-family: "Bricolage Grotesque", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -50,7 +52,7 @@ div.textbio {
     text-align: justify;
 }
 
-div.title {
+.title {
     text-align: center;
     font-size: 3.125rem;
     color: rgb(56, 56, 65);
@@ -58,7 +60,7 @@ div.title {
     margin-bottom: 1.25rem;
 }
 
-div.perfiles {
+.perfiles {
     display: flex;
     justify-content: center;
     margin-top: 40px;
@@ -70,7 +72,7 @@ div.perfiles {
     font-variation-settings: "wdth" 100;
 }
 
-div.perfilprofesional {
+.perfilprofesional {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,24 +81,24 @@ div.perfilprofesional {
     height: 44.64rem;*/
 }
 
-/*div.perfiles img {
+/*.perfiles img {
     border: 2px solid black;
 }*/
 
-div.ppimg {
+.ppimg {
     position: relative;
     height: 100%;
     width: 100%;
     z-index: 0;
 }
 
-div.ppimg img {
+.ppimg img {
     display: block;
     width: 480px;
     height: 640px;
 }
 
-div.ppcontenido {
+.ppcontenido {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,14 +119,14 @@ div.ppcontenido {
     position: relative;
 }
 
-.perfil:hover div.ppcontenido {
+.perfil:hover .ppcontenido {
     opacity: 1;
     transform: scale(1);
     color: rgb(208, 154, 197);
     font-size: 25px;
 }
 
-div.profesional {
+.profesional {
     display: flex;
     justify-content: center;
     margin-top: 40px;
@@ -155,17 +157,17 @@ div.profesional {
     gap: 5rem;
 }
 
-div.imgadministrativo {
+.imgadministrativo {
     border: 3px solid #000000;
 }
 
-div.imgadministrativo img {
+.imgadministrativo img {
     display: block;
     width: 380px;
     height: 260px;
 }
 
-div.textadministrativo {
+.textadministrativo {
     font-family: "Bricolage Grotesque", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -206,11 +208,11 @@ a {
     border: 2px solid black;
 }
 
-div.sonidistaregistros img {
+.sonidistaregistros img {
     display: block;
 }
 
-div.soundcloud {
+.soundcloud {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -220,7 +222,7 @@ div.soundcloud {
     width: 100%;
 }
 
-div.eventosvivo {
+.eventosvivo {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 20px;
@@ -229,14 +231,14 @@ div.eventosvivo {
     font-size: 2rem;
 }
 
-div.eventosvivoimg {
+.eventosvivoimg {
     display: grid;
     grid-template-columns: repeat(auto-fit, 390px);
     gap: 10px;
     justify-content: center;
 }
 
-div.eventosvivoimg img {
+.eventosvivoimg img {
     width: 18.75rem;
     height: 12.5rem;
 }
@@ -253,21 +255,21 @@ div.eventosvivoimg img {
     font-variation-settings: "wdth" 100;
 }
 
-div.ppercuadro {
+.ppercuadro {
     position: relative;
     height: 100%;
     width: 100%;
     z-index: 0;
 }
 
-div.ppercuadro p {
+.ppercuadro p {
     display: block;
     width: 320px;
     height: 400px;
     border: rgb(165, 42, 42) 3px solid;
 }
 
-div.ppercontenido {
+.ppercontenido {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -285,7 +287,7 @@ div.ppercontenido {
     text-align: center;
 }
 
-.perfil:hover div.ppercontenido {
+.perfil:hover .ppercontenido {
     opacity: 1;
     transform: scale(1);
     color: rgb(208, 154, 197);
@@ -303,12 +305,12 @@ div.ppercontenido {
     gap: 2rem;
 }
 
-div.imgperper {
+.imgperper {
     border: rgb(165, 42, 42) 3px solid;
     border-radius: 5%;
 }
 
-div.imgperper a {
+.imgperper a {
     display: flex;
     width: 150px;
     height: 150px;
@@ -319,7 +321,7 @@ div.imgperper a {
     align-items: center;
 }
 
-div.textperper {
+.textperper {
     font-family: "Bricolage Grotesque", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -328,7 +330,7 @@ div.textperper {
     text-align: center;
 }
 
-div.textperper h2 {
+.textperper h2 {
     font-family: "Great Vibes", cursive;
     font-optical-sizing: auto;
     font-style: normal;
@@ -371,19 +373,24 @@ div.textperper h2 {
     align-items: center;
     gap: 2rem;
 }
-div.imgperper2 {
+.imgperper2 {
     border: rgb(165, 42, 42) 0.5px solid;
 }
 .bloquesperper3 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* Para que sea responsive: */
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    width: 100%;
     gap: 10px;
 }
 
 .bloquesperper3 img {
     display: block;
-    width: 18.75rem;
-    height: 12.5rem;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 18.75 / 12.5;
+    /* Para evitar que la imagen se deforme */
+    object-fit: cover; /* o contain */
 }
 
 footer {
@@ -401,6 +408,7 @@ footer {
 @media (max-width: 430px) {
     body {
         background-color: #000000;
+        /* Es mejor definir este tipo de cosas de layout en un elemento contenedor, como un . No recomendamos usar el body para eso. */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -413,7 +421,7 @@ footer {
         width: 100%;
     }
 
-    div.bio {
+    .bio {
         font-size: 1rem;
         line-height: 1.5;
         margin: 1rem;
@@ -423,31 +431,31 @@ footer {
         gap: 1rem;
     }
 
-    div.imgbio {
+    .imgbio {
         border: 2px solid #000000;
     }
 
-    div.imgbio img {
+    .imgbio img {
         display: block;
         width: 124px;
         height: 124px;
     }
 
-    div.ppimg {
+    .ppimg {
         position: relative;
         height: 100%;
         width: 100%;
         z-index: 0;
     }
 
-    div.ppimg img {
+    .ppimg img {
         display: block;
         width: 300px;
         height: 400px;
     }
 
 
-    div.title {
+    .title {
         font-size: 24px;
     }
 
@@ -459,12 +467,12 @@ footer {
 
     }
 
-    div.textbio {
+    .textbio {
         margin-right: 0px;
         text-align: justify;
     }
 
-    div.perfilprofesional {
+    .perfilprofesional {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -493,7 +501,7 @@ footer {
         align-items: center;
     }
 
-    .perfil:hover div.ppcontenido {
+    .perfil:hover .ppcontenido {
         opacity: 1;
         transform: scale(1);
         color: rgb(232, 216, 74);
@@ -519,7 +527,7 @@ footer {
         gap: 20px;
     }
 
-    div.eventosvivo {
+    .eventosvivo {
         text-align: center;
         margin-top: 20px;
         margin-bottom: 10px;
@@ -528,13 +536,13 @@ footer {
         font-size: 1rem;
     }
 
-    div.eventosvivoimg {
+    .eventosvivoimg {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
 
-    div.eventosvivoimg img {
+    .eventosvivoimg img {
         width: 18.75rem;
         height: 12.5rem;
     }
@@ -544,4 +552,16 @@ footer {
         width: 100%;
     }
 
+}
+
+/* Ocultar elementos visualmente pero mantenerlos accesibles para lectores de pantalla */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
