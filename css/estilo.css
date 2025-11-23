@@ -15,7 +15,6 @@ header {
     padding: 10px;
     border-bottom: 2px solid black;
     font-family: "Great Vibes", cursive;
-    font-weight: 400;
     font-style: normal;
 }
 
@@ -68,6 +67,21 @@ div.perfiles {
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings: "wdth" 100;
+}
+
+
+div.retornos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.inicio-atras a {
+    font-size: 2rem;
+    color: rgb(56, 56, 65);
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 div.perfilprofesional {
@@ -145,6 +159,8 @@ div.profesional {
     font-variation-settings: "wdth" 100;
 }
 
+
+
 #administrativo {
     font-size: 1rem;
     line-height: 1.5;
@@ -186,7 +202,12 @@ a {
     color: rgba(223, 223, 146, 0.125);
 }
 
-
+#sonidista {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 1.25rem;
+    margin-bottom: 5rem;
+}
 .sonidistatitulo {
     text-align: center;
     font-size: 3.125rem;
@@ -371,9 +392,11 @@ div.textperper h2 {
     align-items: center;
     gap: 2rem;
 }
+
 div.imgperper2 {
     border: rgb(165, 42, 42) 0.5px solid;
 }
+
 .bloquesperper3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

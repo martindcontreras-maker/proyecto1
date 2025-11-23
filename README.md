@@ -7,3 +7,6 @@ trate de avanzar, no le doy la tecla con el tema de position.
 avance con correcciones de CSS. Cambio de fuente, colores. Amplie el esqueleto del html
 
 luego de dias complicados, trato de ponerme al día siendo las 2 am del lunes 17-11.
+
+despues de un tiempo sin escribir, dejo mi registro
+me está gustando la idea, lastima que lo encare medio tarde. Con Astro hubiera salido más rapido y no estaría renegando con la vinculación de indexxxx
