@@ -94,13 +94,7 @@ div.perfilprofesional {
     justify-content: center;
     align-items: center;
     height: 100%;
-    /*width: 30rem;
-    height: 44.64rem;*/
 }
-
-/*div.perfiles img {
-    border: 2px solid black;
-}*/
 
 div.ppimg {
     position: relative;
@@ -164,8 +158,6 @@ div.profesional {
     font-variation-settings: "wdth" 100;
 }
 
-
-
 #administrativo {
     font-size: 1rem;
     line-height: 1.5;
@@ -191,38 +183,25 @@ div.textadministrativo {
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings: "wdth" 100;
-    max-width: 500px;
+    max-width: 800px;
     text-align: justify;
 }
 
-p.adm2 a {
-    color: rgba(10, 11, 76, 0.792);
-}
-
-p.adm2 {
-    font-size: 1rem;
-}
-
-a {
-    color: rgba(223, 223, 146, 0.125);
-}
 
 #sonidista {
     font-family: "Bricolage Grotesque", sans-serif;
     font-size: 2rem;
     line-height: 1.5;
     text-align: center;
-    margin: 1.25rem;
     margin-bottom: 5rem;
 }
 
-/**.sonidistatitulo {
+.sonidistatitulo {
     text-align: center;
     font-size: 3.125rem;
-    color: rgb(56, 56, 65);
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
-}**/
+}
 
 .bloques {
     display: flex;
@@ -247,6 +226,15 @@ div.soundcloud {
     margin-top: 40px;
     margin-bottom: 40px;
     width: 100%;
+}
+
+div.registroeventosvivo {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    max-width: 100%;
+    text-align: center;
 }
 
 div.eventosvivo {
@@ -354,7 +342,7 @@ div.textperper {
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings: "wdth" 100;
-    max-width: 800px;
+    max-width: 960px;
     text-align: center;
 }
 
@@ -433,7 +421,7 @@ footer {
     font-size: 3rem;
 }
 
-@media (max-width: 430px) {
+@media (width <=27rem) {
     body {
         display: flex;
         justify-content: center;
@@ -442,7 +430,6 @@ footer {
     }
 
     header {
-        font-size: 1rem;
         text-align: center;
         width: 100%;
     }
@@ -450,11 +437,11 @@ footer {
     div.bio {
         font-size: 1rem;
         line-height: 1.5;
-        margin: 1rem;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         gap: 1rem;
+        width: 95%;
     }
 
     div.imgbio {
@@ -463,8 +450,8 @@ footer {
 
     div.imgbio img {
         display: block;
-        width: 124px;
-        height: 124px;
+        width: 144px;
+        height: 144px;
     }
 
     div.ppimg {
@@ -476,13 +463,13 @@ footer {
 
     div.ppimg img {
         display: block;
-        width: 260px;
-        height: 340px;
+        width: 300px;
+        height: 400px;
     }
 
 
     div.title {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     .perfiles {
@@ -510,7 +497,6 @@ footer {
     }
 
     #administrativo {
-        overflow: scroll;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -528,7 +514,7 @@ footer {
         height: auto;
     }
 
-    #perfil .perfilprofessional {
+    #perfil .perfilprofesional {
         height: 10%;
         width: 10%;
         display: flex;
@@ -544,7 +530,6 @@ footer {
     }
 
     #sonidista {
-        overflow: scroll;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -589,6 +574,74 @@ footer {
         height: 106.88px;
     }
 
+    #personal {
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+
+    #untref {
+        font-size: 0.75rem;
+        line-height: 1;
+        gap: 1rem;
+        max-width: 430px;
+    }
+
+    .bloquesperper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    #fotografía {
+        font-size: 0.75rem;
+        line-height: 1;
+        gap: 1rem;
+        max-width: 430px;
+    }
+
+    .bloquesperper2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom: 30px;
+
+    }
+
+    #rompecabezas {
+        font-size: 0.75rem;
+        line-height: 1;
+        gap: 1rem;
+        max-width: 430px;
+    }
+
+    .bloquesperper3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        max-width: 430px;
+    }
+
+    .bloquesperper3 img {
+        display: block;
+        width: 12.5rem;
+        height: 8.5rem;
+    }
+
+    .bloquesperper3_2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .bloquesperper3_2 img {
+        display: block;
+        width: 12.5rem;
+        height: 16.5rem;
+    }
+
     div.retornos {
         display: flex;
         flex-direction: column;
@@ -614,4 +667,933 @@ footer {
         width: 100%;
     }
 
+}
+
+
+@media (width > 27rem) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header {
+        text-align: center;
+        width: 100%;
+    }
+
+    div.bio {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 95%;
+    }
+
+    div.imgbio {
+        border: 2px solid #000000;
+    }
+
+    div.imgbio img {
+        display: block;
+        width: 170px;
+        height: 170px;
+    }
+
+    div.ppimg {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+    }
+
+    div.ppimg img {
+        display: block;
+        width: 330px;
+        height: 440px;
+    }
+
+
+    div.title {
+        font-size: 2rem;
+    }
+
+    .perfiles {
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.textbio {
+        margin-right: 0px;
+        text-align: justify;
+    }
+
+    #profesional {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+    }
+
+    img {
+        object-fit: fill;
+
+    }
+
+    #administrativo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    div.imgadministrativo {
+        width: 100%;
+        height: auto;
+    }
+
+    div.imgadministrativo img {
+        width: 100%;
+        height: auto;
+    }
+
+    #perfil .perfilprofesional {
+        height: 10%;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .perfil:hover div.ppcontenido {
+        opacity: 1;
+        transform: scale(1);
+        color: rgb(232, 216, 74);
+        font-size: 16px;
+    }
+
+    #sonidista {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        max-width: 607px;
+    }
+
+    .sonidistatitulo {
+        font-size: 1.5rem;
+    }
+
+    .bloques {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+
+    .sonidistaregistros {
+        border: 6px solid black;
+        max-width: 300px;
+    }
+
+    div.eventosvivo {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-style: normal;
+        font-size: 1.25rem;
+    }
+
+    div.eventosvivoimg {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    div.eventosvivoimg img {
+        width: 100%;
+        height: 106.88px;
+    }
+
+    #personal {
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+
+    #untref {
+        font-size: 0.75rem;
+        line-height: 1;
+        gap: 1rem;
+        max-width: 550px;
+    }
+
+    .bloquesperper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    #fotografía {
+        font-size: 0.75rem;
+        line-height: 1;
+        gap: 1rem;
+        max-width: 550px;
+    }
+
+    .bloquesperper2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom: 30px;
+
+    }
+
+    #rompecabezas {
+        font-size: 0.75rem;
+        line-height: 1;
+        gap: 1rem;
+        max-width: 550px;
+    }
+
+    .bloquesperper3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        max-width: 550px;
+    }
+
+    .bloquesperper3 img {
+        display: block;
+        width: 12.5rem;
+        height: 8.5rem;
+    }
+
+    .bloquesperper3_2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .bloquesperper3_2 img {
+        display: block;
+        width: 12.5rem;
+        height: 16.5rem;
+    }
+
+    div.retornos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    div.inicio-atras {
+        width: 100%;
+        height: 50%;
+    }
+
+    div.inicio-atras a {
+        font-size: 18px;
+        color: rgb(56, 56, 65);
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+
+    footer {
+        font-size: 18px;
+        width: 100%;
+    }
+
+}
+
+
+@media (width > 38rem) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header {
+        text-align: center;
+        width: 100%;
+    }
+
+    div.bio {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 95%;
+    }
+
+    div.imgbio {
+        border: 2px solid #000000;
+    }
+
+    div.imgbio img {
+        display: block;
+        width: 208px;
+        height: 208px;
+    }
+
+    div.ppimg {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+    }
+
+    div.ppimg img {
+        display: block;
+        width: 375px;
+        height: 500px;
+    }
+
+
+    div.title {
+        font-size: 2.5rem;
+    }
+
+    .perfiles {
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.textbio {
+        margin-right: 0px;
+        text-align: justify;
+    }
+
+    #profesional {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+    }
+
+    img {
+        object-fit: fill;
+
+    }
+
+    #administrativo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    div.imgadministrativo {
+        width: 100%;
+        height: auto;
+    }
+
+    div.imgadministrativo img {
+        width: 100%;
+        height: auto;
+    }
+
+    #perfil .perfilprofesional {
+        height: 10%;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .perfil:hover div.ppcontenido {
+        opacity: 1;
+        transform: scale(1);
+        color: rgb(232, 216, 74);
+        font-size: 20px;
+    }
+
+    #sonidista {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        max-width: 608px;
+    }
+
+    .sonidistatitulo {
+        font-size: 2.25rem;
+    }
+
+    .bloques {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+
+    .sonidistaregistros {
+        border: 6px solid black;
+        max-width: 300px;
+    }
+
+    div.eventosvivo {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-style: normal;
+        font-size: 1rem;
+    }
+
+    div.eventosvivoimg {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    div.eventosvivoimg img {
+        width: 100%;
+        height: 106.88px;
+    }
+
+    #personal {
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+
+    #untref {
+        font-size: 0.75rem;
+        line-height: 1;
+        gap: 1rem;
+        max-width: 750px;
+    }
+
+    .bloquesperper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    #fotografía {
+        font-size: 0.75rem;
+        line-height: 1;
+        gap: 1rem;
+        max-width: 750px;
+    }
+
+    .bloquesperper2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom: 30px;
+
+    }
+
+    #rompecabezas {
+        font-size: 0.75rem;
+        line-height: 1;
+        gap: 1rem;
+        max-width: 750px;
+    }
+
+    .bloquesperper3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        max-width: 750px;
+    }
+
+    .bloquesperper3 img {
+        display: block;
+        width: 15rem;
+        height: 10rem;
+    }
+
+    .bloquesperper3_2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .bloquesperper3_2 img {
+        display: block;
+        width: 12.5rem;
+        height: 16.5rem;
+    }
+
+    div.retornos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    div.inicio-atras {
+        width: 100%;
+        height: 50%;
+    }
+
+    div.inicio-atras a {
+        font-size: 24px;
+        color: rgb(56, 56, 65);
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+
+    footer {
+        font-size: 24px;
+        width: 100%;
+    }
+
+}
+
+@media (width > 60rem) {
+    body {
+        color: brown;
+        background: rgb(219, 198, 159);
+        margin: 0;
+        padding: 0;
+        font-family: "Great Vibes", cursive;
+        font-weight: 400;
+        font-style: normal;
+        width: 100%;
+        height: 100%;
+    }
+
+    header {
+        padding: 10px;
+        border-bottom: 2px solid black;
+    }
+
+    div.bio {
+        font-size: 1.125rem;
+        line-height: 1.5;
+        margin: 1.25rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    div.imgbio {
+        border: 3px solid #000000;
+    }
+
+    div.imgbio img {
+        display: block;
+        width: 248px;
+        height: 248px;
+    }
+
+
+    div.textbio {
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        max-width: 500px;
+        text-align: justify;
+    }
+
+    div.title {
+        text-align: center;
+        font-size: 3.125rem;
+        color: rgb(56, 56, 65);
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+
+    div.perfiles {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        position: relative;
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+    }
+
+
+    div.retornos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10rem;
+    }
+
+    div.inico-atras {
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+
+    div.inicio-atras a {
+        font-size: 2rem;
+        color: rgb(56, 56, 65);
+
+    }
+
+    div.ppimg {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+    }
+
+    div.ppimg img {
+        display: block;
+        width: 480px;
+        height: 640px;
+    }
+
+    div.ppcontenido {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        background: rgba(223, 223, 146, 0.125);
+        opacity: 0;
+        transform: scale(0.8);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        letter-spacing: 0.25em;
+    }
+
+    .perfil {
+        position: relative;
+    }
+
+    .perfil:hover div.ppcontenido {
+        opacity: 1;
+        transform: scale(1);
+        color: rgb(208, 154, 197);
+        font-size: 25px;
+    }
+
+    div.profesional {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    #profesional {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        position: relative;
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-optical-sizing: auto;
+        font: weight 400px;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+    }
+
+    #administrativo {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 1.25rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    div.imgadministrativo {
+        border: 3px solid #000000;
+        width: 90%;
+        height: auto;
+    }
+
+    div.imgadministrativo img {
+        width: 480px;
+        height: auto;
+    }
+
+    div.textadministrativo {
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        max-width: 500px;
+        text-align: justify;
+    }
+
+    p.adm2 a {
+        color: rgba(10, 11, 76, 0.792);
+    }
+
+    p.adm2 {
+        font-size: 1rem;
+    }
+
+    a {
+        color: rgba(223, 223, 146, 0.125);
+    }
+
+    #sonidista {
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-size: 2rem;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 5rem;
+        gap: 20px;
+        max-width: 960px;
+
+    }
+
+    .sonidistatitulo {
+        font-size: 3.125rem;
+        margin-bottom: 0px;
+    }
+
+    .bloques {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .sonidistaregistros {
+        border: 2px solid black;
+    }
+
+    div.sonidistaregistros img {
+        display: block;
+    }
+
+    div.soundcloud {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    div.eventosvivo {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-style: normal;
+        font-size: 2rem;
+    }
+
+    div.eventosvivoimg {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    div.eventosvivoimg img {
+        width: 18.75rem;
+        height: 12.5rem;
+    }
+
+    #personal {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        position: relative;
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+    }
+
+    div.ppercuadro {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+    }
+
+    div.ppercuadro p {
+        display: block;
+        width: 320px;
+        height: 400px;
+        border: rgb(165, 42, 42) 3px solid;
+    }
+
+    div.ppercontenido {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        background: rgba(223, 223, 146, 0.125);
+        opacity: 0;
+        transform: scale(0.8);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        letter-spacing: 0.15em;
+        text-align: center;
+    }
+
+    .perfil:hover div.ppercontenido {
+        opacity: 1;
+        transform: scale(1);
+        color: rgb(208, 154, 197);
+        font-size: 20px;
+    }
+
+    #untref {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        max-width: 960px;
+    }
+
+    div.imgperper {
+        border: rgb(165, 42, 42) 3px solid;
+        border-radius: 5%;
+    }
+
+    div.imgperper a {
+        display: flex;
+        width: 150px;
+        height: 150px;
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-size: 1rem;
+        text-align: center;
+        color: rgba(10, 11, 76, 0.792);
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.textperper {
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        max-width: 960px;
+        text-align: center;
+    }
+
+    .bloquesperper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    #fotografía {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        max-width: 960px;
+    }
+
+    .bloquesperper2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+
+    }
+
+    #rompecabezas {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        max-width: 960px;
+    }
+
+    div.imgperper2 {
+        border: rgb(165, 42, 42) 0.5px solid;
+    }
+
+
+    .bloquesperper3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        max-width: 960px;
+    }
+
+    .bloquesperper3 img {
+        display: block;
+        width: 18.75rem;
+        height: 12.5rem;
+        max-width: 960px;
+    }
+
+    .bloquesperper3_2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        max-width: 960px;
+    }
+
+    .bloquesperper3_2 img {
+        display: block;
+        width: 12.5rem;
+        height: 18.75rem;
+        max-width: 960px;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 40px;
+        padding: 10px;
+        border-top: 0.125rem solid black;
+        background: rgb(194, 130, 130);
+        font-family: "Great Vibes", cursive;
+        font-style: normal;
+        font-size: 3rem;
+    }
 }
