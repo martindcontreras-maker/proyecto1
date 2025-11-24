@@ -896,7 +896,7 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 1rem;
+        gap: 3rem;
     }
 
     div.inicio-atras {
@@ -1145,7 +1145,7 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 1rem;
+        gap: 5rem;
     }
 
     div.inicio-atras {
@@ -1595,5 +1595,438 @@ footer {
         font-family: "Great Vibes", cursive;
         font-style: normal;
         font-size: 3rem;
+    }
+}
+
+
+@media (width > 80rem) {
+    body {
+        color: brown;
+        background: rgb(219, 198, 159);
+        margin: 0;
+        padding: 0;
+        font-family: "Great Vibes", cursive;
+        font-weight: 400;
+        font-style: normal;
+        width: 100%;
+        height: 100%;
+    }
+
+    header {
+        padding: 10px;
+        border-bottom: 2px solid black;
+    }
+
+    div.bio {
+        font-size: 1.125rem;
+        line-height: 1.5;
+        margin: 1.25rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    div.imgbio {
+        border: 3px solid #000000;
+    }
+
+    div.imgbio img {
+        display: block;
+        width: 312px;
+        height: 312px;
+    }
+
+
+    div.textbio {
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        max-width: 600px;
+        text-align: justify;
+        font-size: 1.5rem;
+    }
+
+    div.title {
+        text-align: center;
+        font-size: 3.125rem;
+        color: rgb(56, 56, 65);
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+
+    div.perfiles {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        position: relative;
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+    }
+
+
+    div.retornos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20rem;
+    }
+
+    div.inico-atras {
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+
+    div.inicio-atras a {
+        font-size: 2.5rem;
+        color: rgb(56, 56, 65);
+
+    }
+
+    div.ppimg {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+    }
+
+    div.ppimg img {
+        display: block;
+        width: 520px;
+        height: 680px;
+    }
+
+    div.ppcontenido {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        background: rgba(223, 223, 146, 0.125);
+        opacity: 0;
+        transform: scale(0.8);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        letter-spacing: 0.25em;
+    }
+
+    .perfil {
+        position: relative;
+    }
+
+    .perfil:hover div.ppcontenido {
+        opacity: 1;
+        transform: scale(1);
+        color: rgb(208, 154, 197);
+        font-size: 25px;
+    }
+
+    div.profesional {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    #profesional {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        position: relative;
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-optical-sizing: auto;
+        font: weight 400px;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+    }
+
+    #administrativo {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        margin: 1.25rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    div.imgadministrativo {
+        border: 3px solid #000000;
+        width: 100%;
+        height: auto;
+    }
+
+    div.imgadministrativo img {
+        width: 520px;
+        height: auto;
+    }
+
+    div.textadministrativo {
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        max-width: 500px;
+        text-align: justify;
+    }
+
+    p.adm2 a {
+        color: rgba(10, 11, 76, 0.792);
+    }
+
+    p.adm2 {
+        font-size: 1.5rem;
+    }
+
+    a {
+        color: rgba(223, 223, 146, 0.125);
+    }
+
+    #sonidista {
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-size: 2rem;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 5rem;
+        gap: 20px;
+        max-width: 960px;
+
+    }
+
+    .sonidistatitulo {
+        font-size: 3.125rem;
+        margin-bottom: 0px;
+    }
+
+    .bloques {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .sonidistaregistros {
+        border: 2px solid black;
+    }
+
+    div.sonidistaregistros img {
+        display: block;
+    }
+
+    div.soundcloud {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    div.eventosvivo {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-style: normal;
+        font-size: 2rem;
+    }
+
+    div.eventosvivoimg {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    div.eventosvivoimg img {
+        width: 18.75rem;
+        height: 12.5rem;
+    }
+
+    #personal {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        position: relative;
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+    }
+
+    div.ppercuadro {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+    }
+
+    div.ppercuadro p {
+        display: block;
+        width: 320px;
+        height: 400px;
+        border: rgb(165, 42, 42) 3px solid;
+    }
+
+    div.ppercontenido {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        background: rgba(223, 223, 146, 0.125);
+        opacity: 0;
+        transform: scale(0.8);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        letter-spacing: 0.15em;
+        text-align: center;
+    }
+
+    .perfil:hover div.ppercontenido {
+        opacity: 1;
+        transform: scale(1);
+        color: rgb(208, 154, 197);
+        font-size: 20px;
+    }
+
+    #untref {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        margin: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        max-width: 1280px;
+    }
+
+    div.imgperper {
+        border: rgb(165, 42, 42) 3px solid;
+        border-radius: 5%;
+    }
+
+    div.imgperper a {
+        display: flex;
+        width: 150px;
+        height: 150px;
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+        color: rgba(10, 11, 76, 0.792);
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.textperper {
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        max-width: 1280px;
+        text-align: center;
+    }
+
+    .bloquesperper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    #fotografía {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        margin: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        max-width: 1280px;
+    }
+
+    .bloquesperper2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+
+    }
+
+    #rompecabezas {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        margin: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        max-width: 1280px;
+    }
+
+    div.imgperper2 {
+        border: rgb(165, 42, 42) 0.5px solid;
+    }
+
+
+    .bloquesperper3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        max-width: 12800px;
+    }
+
+    .bloquesperper3 img {
+        display: block;
+        width: 18.75rem;
+        height: 12.5rem;
+        max-width: 1280px;
+    }
+
+    .bloquesperper3_2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        max-width: 1280px;
+    }
+
+    .bloquesperper3_2 img {
+        display: block;
+        width: 12.5rem;
+        height: 18.75rem;
+        max-width: 1280px;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 40px;
+        padding: 10px;
+        border-top: 0.125rem solid black;
+        background: rgb(194, 130, 130);
+        font-family: "Great Vibes", cursive;
+        font-style: normal;
+        font-size: 3.5rem;
     }
 }
